@@ -8,10 +8,19 @@
 <body>
 <h1>
     <?php
-    $greeting = "Hello";
+    $name = "dark matter";
+    $read = true;
 
-    echo "$greeting world"
+    if ($read) {
+        $message = "You have read $name";
+    } else {
+        $message = "You have not read the book";
+    }
     ?>
+
+    <h1>
+        <?= $message; ?>
+    </h1>
 </h1>
 
 </body>
